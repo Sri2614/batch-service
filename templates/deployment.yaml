@@ -15,6 +15,7 @@ spec:
       labels:
         app.kubernetes.io/name: {{ include "batch-service.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
+        app.kubernetes.io/app: {{ include "batch-service.appname" . }}
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
