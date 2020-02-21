@@ -68,7 +68,7 @@ tolerations: []
 
 affinity: {}
 
-caliber-batch-postgres-service:
+caliberBatchPostgresService:
   enabled: true
   global:
     postgresql: {}
