@@ -1,0 +1,6 @@
+dependencies:
+  - name: postgresql
+    alias: caliber-batch-postgres-service
+    version: 8.4.0
+    repository: https://kubernetes-charts.storage.googleapis.com
+    condition: caliber-batch-postgres-service.enabled
